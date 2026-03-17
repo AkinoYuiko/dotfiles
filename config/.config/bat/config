@@ -1,0 +1,4 @@
+--pager='less --RAW-CONTROL-CHARS --quit-if-one-screen --mouse'
+--style=plain
+--tabs=2
+--theme=everforest

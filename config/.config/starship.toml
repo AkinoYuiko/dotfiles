@@ -1,0 +1,72 @@
+add_newline = false
+format = "$username$directory$git_branch$git_state$git_status$cmd_duration$line_break$python$character"
+palette = "everforest"
+scan_timeout = 2000
+
+[character]
+error_symbol = "[❯](red)"
+success_symbol = "[❯](purple)"
+vimcmd_symbol = "[❮](green)"
+
+[cmd_duration]
+format = "[$duration]($style) "
+style = "yellow"
+
+[directory]
+style = "blue"
+
+[git_branch]
+format = "[$branch]($style)"
+style = "bright-black"
+
+[git_state]
+format = "[$state( $progress_current/$progress_total)]($style)"
+style = "bright-black"
+
+[git_status]
+conflicted = "​"
+deleted = "​"
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
+modified = "​"
+renamed = "​"
+staged = "​"
+stashed = "≡"
+style = "cyan"
+untracked = "​"
+
+[palettes.everforest]
+aqua = "#83C092"
+bg-blue = "#3A515D"
+bg-dim = "#232A2E"
+bg-green = "#425047"
+bg-red = "#514045"
+bg-visual = "#543A48"
+bg-yellow = "#4D4C43"
+bg0 = "#2D353B"
+bg1 = "#343F44"
+bg2 = "#3D484D"
+bg3 = "#475258"
+bg4 = "#4F585E"
+bg5 = "#56635f"
+blue = "#7FBBB3"
+fg = "#D3C6AA"
+green = "#A7C080"
+grey0 = "#7A8478"
+grey1 = "#859289"
+grey2 = "#9DA9A0"
+orange = "#E69875"
+purple = "#D699B6"
+red = "#E67E80"
+statusline1 = "#A7C080"
+statusline2 = "#D3C6AA"
+statusline3 = "#E67E80"
+yellow = "#DBBC7F"
+
+[python]
+detect_extensions = []
+detect_files = []
+format = "[$virtualenv]($style) "
+style = "bright-black"
+
+[username]
+format = "[$user]($style) "
