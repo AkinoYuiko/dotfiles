@@ -1,5 +1,4 @@
 [core]
-  editor = nvim
   autocrlf = input
 [user]
   name = Civi
@@ -13,3 +12,5 @@
   defaultBranch = main
 [gpg]
   format = ssh
+[gpg "ssh"]
+  allowedSignersFile = "~/.ssh/allowed_signers"
