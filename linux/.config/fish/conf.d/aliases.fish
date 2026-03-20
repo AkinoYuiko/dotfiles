@@ -17,4 +17,5 @@ alias rmr "rm -r"
 
 alias cdc "cd $HOME/.config"
 alias cdf "cd $HOME/.config/fish"
+alias cdv "cd $HOME/.config/nvim"
 alias cdd "cd $HOME/dotfiles"
