@@ -12,3 +12,4 @@ set -x NPM_CONFIG_USERCONFIG "$XDG_CONFIG_HOME/npm/config"
 set -x NPM_CONFIG_CACHE "$XDG_CACHE_HOME/npm"
 set -x NPM_CONFIG_TMP "$XDG_RUNTIME_DIR/npm"
 
+set -gx fish_terminal_color_theme dark
