@@ -1,0 +1,31 @@
+set cul culopt=number nu noswf et so=3 sw=0 ts=2
+let mapleader=" "
+no ; :
+no H ^
+no L g_
+nn J <c-d>
+nn K <c-u>
+nn B <cmd>bd<cr>
+nn Q <cmd>q<cr>
+nn W <cmd>w<cr>
+nn <space> <nop>
+nn <silent> <esc> <cmd>noh<cr>
+nn <silent> <leader>m <cmd>se nu! nu?<cr>
+nn <silent> <leader>w <cmd>se wrap! wrap?<cr>
+nn <silent> <leader>l <cmd>se list! list?<cr>
+call plug#begin()
+Plug 'editorconfig/editorconfig-vim'
+Plug 'akinoyuiko/lightline.vim'
+Plug 'sainnhe/everforest'
+" Plug 'dense-analysis/ale'
+Plug 'tpope/vim-sleuth'
+call plug#end()
+if has('termguicolors') | set termguicolors | endif
+let g:everforest_transparent_background = 2
+let g:everforest_background = "hard"
+let g:everforest_floatstyle = "blend"
+let g:everforest_show_eob = 0
+silent! color everforest
+let g:lightline = {'colorscheme' : 'everforest'}
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") && &ft !~# 'commit' | execute "normal! g`\"" | endif
+au BufWritePre * :%s/\s\+$//e
